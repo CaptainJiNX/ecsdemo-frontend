@@ -70,7 +70,7 @@ class FrontendService(core.Stack):
             cluster=self.base_platform.ecs_cluster,
             cpu=256,
             memory_limit_mib=512,
-            desired_count=1,
+            desired_count=3,
             public_load_balancer=True,
             cloud_map_options=self.base_platform.sd_namespace,
             task_image_options=self.fargate_task_image
